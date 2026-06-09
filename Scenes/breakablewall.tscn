@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://d3haelodbgd2o"]
+
+[ext_resource type="PackedScene" uid="uid://c0a1i02sao2v4" path="res://Scenes/wall.tscn" id="1_kgn2o"]
+[ext_resource type="Script" uid="uid://db6x3w40hjw0e" path="res://Scripts/breakablewall.gd" id="2_vqvbd"]
+[ext_resource type="Shader" uid="uid://bkinwnbt73hid" path="res://Shaders/cracks.gdshader" id="3_rd47w"]
+[ext_resource type="Texture2D" uid="uid://dq6keyna3f658" path="res://Assets/glass.png" id="4_mhj1a"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mhj1a"]
+shader = ExtResource("3_rd47w")
+shader_parameter/crack_depth = 3.16400015029
+shader_parameter/crack_scale = 2.0050000477375
+shader_parameter/crack_zebra_scale = 4.4230002100925
+shader_parameter/crack_zebra_amp = 1.970000093575
+shader_parameter/crack_profile = 1.3090000621775
+shader_parameter/crack_slope = 46.150002192125
+shader_parameter/crack_width = 0.0610000028975
+shader_parameter/refraction_offset = Vector2(25, 25)
+shader_parameter/reflection_offset = Vector2(1, 1)
+shader_parameter/reflection_color = Color(0.588, 0.588, 0.588, 0.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k3mhf"]
+resource_local_to_scene = true
+size = Vector2(64, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rd47w"]
+resource_local_to_scene = true
+size = Vector2(104, 104)
+
+[sub_resource type="Curve" id="Curve_k3mhf"]
+_data = [Vector2(0.018518522, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.25146198), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="breakablewall" unique_id=51137901 instance=ExtResource("1_kgn2o")]
+script = ExtResource("2_vqvbd")
+massNeeded = 10.0
+crackShader = SubResource("ShaderMaterial_mhj1a")
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=533170504]
+shape = SubResource("RectangleShape2D_k3mhf")
+
+[node name="Area2D" type="Area2D" parent="." index="2" unique_id=365854931]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0" unique_id=719512791]
+position = Vector2(32, 32)
+shape = SubResource("RectangleShape2D_rd47w")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." index="3" unique_id=515280833]
+position = Vector2(32, 32)
+emitting = false
+amount = 50
+texture = ExtResource("4_mhj1a")
+one_shot = true
+explosiveness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(32, 32)
+direction = Vector2(0, 0)
+spread = 180.0
+initial_velocity_min = 1000.0
+initial_velocity_max = 5000.0
+scale_amount_min = 0.8
+scale_amount_max = 1.2
+scale_amount_curve = SubResource("Curve_k3mhf")
+
+[node name="Timer1" type="Timer" parent="." index="4" unique_id=866543469]
+wait_time = 0.3
+
+[node name="Timer2" type="Timer" parent="." index="5" unique_id=153804557]

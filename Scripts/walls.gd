@@ -5,7 +5,6 @@ extends Node2D
 
 func _rotate_world_around_pivot(pivot: Vector2, angle: float) -> void:
 	for child in get_children():
-		print(child.name)
 		if child is Node2D:
 			var node = child as Node2D
 			var offset = node.global_position - pivot
