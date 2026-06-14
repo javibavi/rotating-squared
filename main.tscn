@@ -5,10 +5,10 @@
 [ext_resource type="Script" uid="uid://cvm8v88feww0x" path="res://Scripts/camera.gd" id="2_7mycd"]
 [ext_resource type="Script" uid="uid://c8xc80ab23jyd" path="res://Scripts/walls.gd" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://bmtwn5fo3gcsf" path="res://Assets/back.png" id="4_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://cmsxt4w27tsks" path="res://menu.tscn" id="5_lquwl"]
 [ext_resource type="PackedScene" uid="uid://d3haelodbgd2o" path="res://Scenes/breakablewall.tscn" id="6_5vw27"]
 [ext_resource type="PackedScene" uid="uid://d28ne4354uatg" path="res://Scenes/expander.tscn" id="7_272bh"]
 [ext_resource type="PackedScene" uid="uid://xbsqyeu1tdcs" path="res://Scenes/pressure_plate.tscn" id="8_4c57u"]
+[ext_resource type="Script" uid="uid://cogyko5verpcv" path="res://Scripts/end_game.gd" id="9_4c57u"]
 [ext_resource type="PackedScene" uid="uid://cu2l7krilu1b2" path="res://Scenes/movablewall.tscn" id="9_efxa6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4c57u"]
@@ -211,7 +211,7 @@ size = Vector2(869, 178)
 resource_local_to_scene = true
 size = Vector2(909, 218)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ruth0"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rm4vd"]
 resource_local_to_scene = true
 size = Vector2(64, 297)
 
@@ -250,7 +250,7 @@ tracks/0/keys = {
 "values": [Vector2(2469, -289), Vector2(2469, -585)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_rm4vd"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pjyto"]
 resource_local_to_scene = true
 _data = {
 &"RESET": SubResource("Animation_074og"),
@@ -258,7 +258,7 @@ _data = {
 &"on_success": SubResource("Animation_82xsv")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pjyto"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sm6fg"]
 resource_local_to_scene = true
 size = Vector2(122, 2869)
 
@@ -274,7 +274,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [-0.8794591]
+"values": [0.0]
 }
 
 [sub_resource type="Animation" id="Animation_1u8w0"]
@@ -311,7 +311,7 @@ tracks/0/keys = {
 "values": [0.0, -0.8794591]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_sm6fg"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b17eg"]
 resource_local_to_scene = true
 _data = {
 &"RESET": SubResource("Animation_d13ii"),
@@ -319,7 +319,7 @@ _data = {
 &"on_success": SubResource("Animation_0odxb")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_b17eg"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ntx8l"]
 resource_local_to_scene = true
 size = Vector2(88, 734)
 
@@ -372,7 +372,7 @@ tracks/0/keys = {
 "values": [Vector2(14317, 3233), Vector2(14315, 3170)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ntx8l"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uatky"]
 resource_local_to_scene = true
 _data = {
 &"RESET": SubResource("Animation_seu75"),
@@ -380,7 +380,7 @@ _data = {
 &"on_success": SubResource("Animation_jq2sk")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_uatky"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rqtf5"]
 resource_local_to_scene = true
 size = Vector2(108, 1013)
 
@@ -433,7 +433,7 @@ tracks/0/keys = {
 "values": [0.0, 1.5475322]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_rqtf5"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1vm84"]
 resource_local_to_scene = true
 _data = {
 &"RESET": SubResource("Animation_4c57u"),
@@ -441,7 +441,7 @@ _data = {
 &"on_success": SubResource("Animation_b1qrp")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vm84"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wu3dr"]
 resource_local_to_scene = true
 size = Vector2(108, 228)
 
@@ -479,7 +479,7 @@ tracks/0/keys = {
 "values": [Vector2(2588, 377), Vector2(2588, 592)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_wu3dr"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cyx1q"]
 resource_local_to_scene = true
 _data = {
 &"RESET": SubResource("Animation_4c57u"),
@@ -487,7 +487,7 @@ _data = {
 &"on_success": SubResource("Animation_h8e4i")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_cyx1q"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0dhbp"]
 resource_local_to_scene = true
 size = Vector2(130, 1739)
 
@@ -525,7 +525,7 @@ tracks/0/keys = {
 "values": [0.0, -0.48386073]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_0dhbp"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jx0wj"]
 resource_local_to_scene = true
 _data = {
 &"RESET": SubResource("Animation_4c57u"),
@@ -533,7 +533,7 @@ _data = {
 &"on_success": SubResource("Animation_0cp0l")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jx0wj"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kkkcx"]
 resource_local_to_scene = true
 size = Vector2(369, 958)
 
@@ -586,7 +586,7 @@ tracks/0/keys = {
 "values": [Vector2(3967, 6752)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_kkkcx"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_34ol3"]
 resource_local_to_scene = true
 _data = {
 &"RESET": SubResource("Animation_ruth0"),
@@ -594,7 +594,7 @@ _data = {
 &"on_success": SubResource("Animation_pjyto")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_34ol3"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c2n8d"]
 resource_local_to_scene = true
 size = Vector2(112.1521, 1190.4175)
 
@@ -633,13 +633,16 @@ tracks/0/keys = {
 "values": [-0.6134861, -1.5491251]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_c2n8d"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wy5fy"]
 resource_local_to_scene = true
 _data = {
 &"RESET": SubResource("Animation_ntx8l"),
 &"on_failure": SubResource("Animation_uatky"),
 &"on_success": SubResource("Animation_rqtf5")
 }
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ruth0"]
+size = Vector2(8209, 4441)
 
 [node name="Node2D" type="Node2D" unique_id=1826810981]
 
@@ -650,13 +653,12 @@ script = ExtResource("2_7mycd")
 
 [node name="ball1" parent="." unique_id=1798009355 instance=ExtResource("1_3vijo")]
 unique_name_in_owner = true
-position = Vector2(2232, -311.0005)
+position = Vector2(243.99995, -292.99997)
 rotation = -0.20684847
-mass = 2.0
 
 [node name="ball2" parent="." unique_id=537935712 instance=ExtResource("1_3vijo")]
 unique_name_in_owner = true
-position = Vector2(2074, 124)
+position = Vector2(568, 213)
 scale = Vector2(1.0000001, 1.0000001)
 
 [node name="World" type="Node2D" parent="." unique_id=1534289784]
@@ -1376,14 +1378,13 @@ offset_bottom = 170.0
 
 [node name="CollisionShape2D" parent="World/MovableWalls/movablewall" index="1" unique_id=533170504]
 position = Vector2(32, 21.5)
-shape = SubResource("RectangleShape2D_ruth0")
+shape = SubResource("RectangleShape2D_rm4vd")
 
 [node name="AnimationPlayer" parent="World/MovableWalls/movablewall" index="2" unique_id=656392015]
-libraries/ = SubResource("AnimationLibrary_rm4vd")
+libraries/ = SubResource("AnimationLibrary_pjyto")
 
 [node name="movablewall2" parent="World/MovableWalls" unique_id=477152375 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_efxa6")]
 position = Vector2(10478, 176)
-rotation = -0.8794591
 pressure_plates = [NodePath("../../PressurePlates/PressurePlate2"), NodePath("../../PressurePlates/PressurePlate3")]
 all_plates_needed = false
 
@@ -1393,11 +1394,11 @@ offset_bottom = 2869.0
 
 [node name="CollisionShape2D" parent="World/MovableWalls/movablewall2" index="1" unique_id=533170504]
 position = Vector2(61, 1434.5)
-shape = SubResource("RectangleShape2D_pjyto")
+shape = SubResource("RectangleShape2D_sm6fg")
 
 [node name="AnimationPlayer" parent="World/MovableWalls/movablewall2" index="2" unique_id=656392015]
 root_node = NodePath("../../movablewall2")
-libraries/ = SubResource("AnimationLibrary_sm6fg")
+libraries/ = SubResource("AnimationLibrary_b17eg")
 
 [node name="movablewall3" parent="World/MovableWalls" unique_id=1470495775 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_efxa6")]
 position = Vector2(14317, 3233)
@@ -1413,10 +1414,10 @@ offset_bottom = 636.0
 
 [node name="CollisionShape2D" parent="World/MovableWalls/movablewall3" index="1" unique_id=533170504]
 position = Vector2(64, 269)
-shape = SubResource("RectangleShape2D_b17eg")
+shape = SubResource("RectangleShape2D_ntx8l")
 
 [node name="AnimationPlayer" parent="World/MovableWalls/movablewall3" index="2" unique_id=656392015]
-libraries/ = SubResource("AnimationLibrary_ntx8l")
+libraries/ = SubResource("AnimationLibrary_uatky")
 
 [node name="movablewall4" parent="World/MovableWalls" unique_id=347356784 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_efxa6")]
 position = Vector2(2663.9998, 3015)
@@ -1429,10 +1430,10 @@ offset_bottom = 1013.0
 
 [node name="CollisionShape2D" parent="World/MovableWalls/movablewall4" index="1" unique_id=533170504]
 position = Vector2(54, 506.5)
-shape = SubResource("RectangleShape2D_uatky")
+shape = SubResource("RectangleShape2D_rqtf5")
 
 [node name="AnimationPlayer" parent="World/MovableWalls/movablewall4" index="2" unique_id=656392015]
-libraries/ = SubResource("AnimationLibrary_rqtf5")
+libraries/ = SubResource("AnimationLibrary_1vm84")
 
 [node name="movablewall5" parent="World/MovableWalls" unique_id=2134494549 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_efxa6")]
 position = Vector2(2588, 450)
@@ -1446,10 +1447,10 @@ offset_bottom = 228.0
 
 [node name="CollisionShape2D" parent="World/MovableWalls/movablewall5" index="1" unique_id=533170504]
 position = Vector2(54, 114)
-shape = SubResource("RectangleShape2D_1vm84")
+shape = SubResource("RectangleShape2D_wu3dr")
 
 [node name="AnimationPlayer" parent="World/MovableWalls/movablewall5" index="2" unique_id=656392015]
-libraries/ = SubResource("AnimationLibrary_wu3dr")
+libraries/ = SubResource("AnimationLibrary_cyx1q")
 
 [node name="movablewall6" parent="World/MovableWalls" unique_id=1339267730 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_efxa6")]
 position = Vector2(2551.0002, 892)
@@ -1464,10 +1465,10 @@ offset_bottom = 1739.0
 
 [node name="CollisionShape2D" parent="World/MovableWalls/movablewall6" index="1" unique_id=533170504]
 position = Vector2(82, 869.5)
-shape = SubResource("RectangleShape2D_cyx1q")
+shape = SubResource("RectangleShape2D_0dhbp")
 
 [node name="AnimationPlayer" parent="World/MovableWalls/movablewall6" index="2" unique_id=656392015]
-libraries/ = SubResource("AnimationLibrary_0dhbp")
+libraries/ = SubResource("AnimationLibrary_jx0wj")
 
 [node name="movablewall7" parent="World/MovableWalls" unique_id=399641092 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_efxa6")]
 position = Vector2(937, 6752)
@@ -1481,10 +1482,10 @@ offset_bottom = 417.0
 
 [node name="CollisionShape2D" parent="World/MovableWalls/movablewall7" index="1" unique_id=533170504]
 position = Vector2(77.5, -62)
-shape = SubResource("RectangleShape2D_jx0wj")
+shape = SubResource("RectangleShape2D_kkkcx")
 
 [node name="AnimationPlayer" parent="World/MovableWalls/movablewall7" index="2" unique_id=656392015]
-libraries/ = SubResource("AnimationLibrary_kkkcx")
+libraries/ = SubResource("AnimationLibrary_34ol3")
 
 [node name="movablewall8" parent="World/MovableWalls" unique_id=1262713137 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_efxa6")]
 position = Vector2(2658.0005, 5204.0005)
@@ -1499,10 +1500,20 @@ offset_bottom = 1190.4175
 
 [node name="CollisionShape2D" parent="World/MovableWalls/movablewall8" index="1" unique_id=533170504]
 position = Vector2(56.07605, 595.20874)
-shape = SubResource("RectangleShape2D_34ol3")
+shape = SubResource("RectangleShape2D_c2n8d")
 
 [node name="AnimationPlayer" parent="World/MovableWalls/movablewall8" index="2" unique_id=656392015]
-libraries/ = SubResource("AnimationLibrary_c2n8d")
+libraries/ = SubResource("AnimationLibrary_wy5fy")
+
+[node name="Area2D" type="Area2D" parent="World" unique_id=1635769230]
+collision_mask = 2
+script = ExtResource("9_4c57u")
+fade_in_secs = 1.5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Area2D" unique_id=1456289593]
+position = Vector2(20843.002, 3855.001)
+rotation = 0.65286267
+shape = SubResource("RectangleShape2D_ruth0")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=877621778]
 z_index = -1
@@ -1514,11 +1525,19 @@ scale = Vector2(30.687784, 30.708979)
 texture = ExtResource("4_1bvp3")
 stretch_mode = 1
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=180182548]
-visible = false
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1169827972]
 
-[node name="menu" parent="CanvasLayer" unique_id=884898043 instance=ExtResource("5_lquwl")]
-metadata/_edit_use_anchors_ = true
+[node name="WhiteScreen" type="TextureRect" parent="CanvasLayer" unique_id=1351327085]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_1bvp3")
+stretch_mode = 1
 
 [editable path="World/Walls/Tutorial/wall"]
 [editable path="World/Walls/Tutorial/wall9"]

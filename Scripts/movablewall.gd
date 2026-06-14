@@ -7,6 +7,7 @@ extends StaticBody2D
 @export var stays_successful: bool = false
 @onready var animationPlayer: AnimationPlayer = $AnimationPlayer
 var pressed : int
+var isSuccess : bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -18,10 +19,13 @@ func _ready() -> void:
 
 
 func _on_success() -> void:
-	_play_sound(null)
-	animationPlayer.play("on_success")
+	if not isSuccess:
+		isSuccess = true
+		_play_sound(null)
+		animationPlayer.play("on_success")
 
 func _on_failure() -> void:
+	isSuccess = false
 	_play_sound(null)
 	animationPlayer.play("on_failure")
 
