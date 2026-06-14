@@ -23,6 +23,7 @@ func _on_body_entered(body: PhysicsBody2D) -> void:
 			call_deferred("_break_wall")
 			textureRect.material = crackShader
 			timer1.start()
+			_play_sound(body)
 
 func _break_wall() -> void:
 	$CollisionShape2D.disabled = true
@@ -50,6 +51,9 @@ func _process(_delta: float) -> void:
 		particleRect.set_emission_rect_extents(texture_rect.size/2)
 		particleRect.position = texture_rect.position + texture_rect.size/2
 
-		
+func _play_sound(_body: Node) -> void:
+	var audio_player: AudioStreamPlayer = $AudioStreamPlayer
+	if not audio_player.playing:
+		audio_player.play()
 
 	

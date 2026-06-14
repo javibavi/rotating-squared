@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bgm4w3aauu7e7"]
+
+[ext_resource type="AudioStream" uid="uid://g102eotfvcnw" path="res://Assets/Audio/song.wav" id="1_fbmny"]
+
+[node name="Music" type="AudioStreamPlayer" unique_id=255970161]
+stream = ExtResource("1_fbmny")
+volume_db = -6.615
+autoplay = true

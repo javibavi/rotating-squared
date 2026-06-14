@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cu2l7krilu1b2"]
+
+[ext_resource type="PackedScene" uid="uid://c0a1i02sao2v4" path="res://Scenes/wall.tscn" id="1_dytww"]
+[ext_resource type="Script" uid="uid://cuv1op0w0c184" path="res://Scripts/movablewall.gd" id="2_nf8jb"]
+[ext_resource type="AudioStream" uid="uid://c40ygrn6ebgj8" path="res://Assets/Audio/stonefloor.mp3" id="3_li5j7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3opva"]
+resource_local_to_scene = true
+size = Vector2(64, 64)
+
+[sub_resource type="Animation" id="Animation_li5j7"]
+resource_local_to_scene = true
+resource_name = "on_failure"
+
+[sub_resource type="Animation" id="Animation_nf8jb"]
+resource_local_to_scene = true
+resource_name = "on_success"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_li5j7"]
+resource_local_to_scene = true
+_data = {
+&"on_failure": SubResource("Animation_li5j7"),
+&"on_success": SubResource("Animation_nf8jb")
+}
+
+[node name="movablewall" unique_id=51137901 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("1_dytww")]
+script = ExtResource("2_nf8jb")
+pressure_plates = []
+all_plates_needed = true
+stays_successful = false
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=533170504]
+shape = SubResource("RectangleShape2D_3opva")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2" unique_id=656392015]
+libraries/ = SubResource("AnimationLibrary_li5j7")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="3" unique_id=961936358]
+stream = ExtResource("3_li5j7")

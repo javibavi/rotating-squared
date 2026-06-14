@@ -15,9 +15,12 @@ run/main_scene="uid://bgi1yr0n838pl"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Music="*uid://bgm4w3aauu7e7"
+
 [display]
 
-window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 

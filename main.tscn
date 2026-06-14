@@ -8,44 +8,638 @@
 [ext_resource type="PackedScene" uid="uid://cmsxt4w27tsks" path="res://menu.tscn" id="5_lquwl"]
 [ext_resource type="PackedScene" uid="uid://d3haelodbgd2o" path="res://Scenes/breakablewall.tscn" id="6_5vw27"]
 [ext_resource type="PackedScene" uid="uid://d28ne4354uatg" path="res://Scenes/expander.tscn" id="7_272bh"]
-[ext_resource type="Shader" uid="uid://bkinwnbt73hid" path="res://Shaders/cracks.gdshader" id="7_kek77"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5vw27"]
-resource_local_to_scene = true
-size = Vector2(1762.8922, 64)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kek77"]
-resource_local_to_scene = true
-size = Vector2(616.9275, 64)
+[ext_resource type="PackedScene" uid="uid://xbsqyeu1tdcs" path="res://Scenes/pressure_plate.tscn" id="8_4c57u"]
+[ext_resource type="PackedScene" uid="uid://cu2l7krilu1b2" path="res://Scenes/movablewall.tscn" id="9_efxa6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4c57u"]
 resource_local_to_scene = true
-size = Vector2(1722.4941, 64)
+size = Vector2(7119.501, 102.00281)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_efxa6"]
 resource_local_to_scene = true
-size = Vector2(616.9275, 64)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_4c57u"]
-shader = ExtResource("7_kek77")
-shader_parameter/crack_depth = 2.236
-shader_parameter/crack_scale = 2.1910000565725003
-shader_parameter/crack_zebra_scale = 1.8970000901075
-shader_parameter/crack_zebra_amp = 0.83600003971
-shader_parameter/crack_profile = 1.258000059755
-shader_parameter/crack_slope = 45.8
-shader_parameter/crack_width = 0.0410000019475
-shader_parameter/refraction_offset = Vector2(25, 25)
-shader_parameter/reflection_offset = Vector2(1, 1)
-shader_parameter/reflection_color = Color(0.588, 0.588, 0.588, 0.5)
+size = Vector2(7119.501, 102.00281)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dg77c"]
 resource_local_to_scene = true
-size = Vector2(605, 349)
+size = Vector2(7119.501, 102.00281)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
 resource_local_to_scene = true
-size = Vector2(645, 389)
+size = Vector2(3053.0479, 94.898895)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w48qg"]
+resource_local_to_scene = true
+size = Vector2(4214.559, 94.898895)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vivmo"]
+resource_local_to_scene = true
+size = Vector2(4214.559, 94.898895)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2cqfq"]
+resource_local_to_scene = true
+size = Vector2(7119.501, 102.00281)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yaehf"]
+resource_local_to_scene = true
+size = Vector2(92.49142, 975.87366)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_074og"]
+resource_local_to_scene = true
+size = Vector2(127.24896, 210.86328)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cegan"]
+resource_local_to_scene = true
+size = Vector2(127.24896, 210.86328)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_82xsv"]
+resource_local_to_scene = true
+size = Vector2(146.90527, 457.38306)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_getpj"]
+resource_local_to_scene = true
+size = Vector2(5966.944, 94.898895)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ryguw"]
+resource_local_to_scene = true
+size = Vector2(8420.395, 94.898895)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d13ii"]
+resource_local_to_scene = true
+size = Vector2(86.25391, 932.28845)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1u8w0"]
+resource_local_to_scene = true
+size = Vector2(8662.878, 101.97241)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0odxb"]
+resource_local_to_scene = true
+size = Vector2(4949.6104, 101.97241)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lswn8"]
+resource_local_to_scene = true
+size = Vector2(127.72949, 2528.8372)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a6jrf"]
+resource_local_to_scene = true
+size = Vector2(2391.3413, 101.97241)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xuqvo"]
+resource_local_to_scene = true
+size = Vector2(2407.3997, 101.97241)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qsp4k"]
+resource_local_to_scene = true
+size = Vector2(1090.0103, 101.97241)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kq58d"]
+resource_local_to_scene = true
+size = Vector2(135.5221, 2197.7615)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_seu75"]
+resource_local_to_scene = true
+size = Vector2(135.5221, 1242.363)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_htxhm"]
+resource_local_to_scene = true
+size = Vector2(135.5221, 3775.3135)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jq2sk"]
+resource_local_to_scene = true
+size = Vector2(135.5221, 3775.3135)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4k2k6"]
+resource_local_to_scene = true
+size = Vector2(135.5221, 2000.8848)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0rl1p"]
+resource_local_to_scene = true
+size = Vector2(135.5221, 1242.363)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ok6jj"]
+resource_local_to_scene = true
+size = Vector2(135.5221, 4574.6504)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_facbu"]
+resource_local_to_scene = true
+size = Vector2(135.5221, 2464.415)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b1qrp"]
+resource_local_to_scene = true
+size = Vector2(135.5221, 1361.7046)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_come4"]
+resource_local_to_scene = true
+size = Vector2(135.5221, 2828.8462)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h8e4i"]
+resource_local_to_scene = true
+size = Vector2(135.5221, 1630.0382)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4lmeg"]
+resource_local_to_scene = true
+size = Vector2(463.4701, 103.36865)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0cp0l"]
+resource_local_to_scene = true
+size = Vector2(463.4701, 103.36865)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2t1y"]
+resource_local_to_scene = true
+size = Vector2(463.4701, 103.36865)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gngh3"]
+resource_local_to_scene = true
+size = Vector2(463.4701, 103.36865)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0n3wm"]
+resource_local_to_scene = true
+size = Vector2(463.4701, 103.36865)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qnost"]
+resource_local_to_scene = true
+size = Vector2(463.4701, 103.36865)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wnkbs"]
+resource_local_to_scene = true
+size = Vector2(463.4701, 103.36865)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f6a44"]
+resource_local_to_scene = true
+size = Vector2(3400.058, 123.98291)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0cbny"]
+resource_local_to_scene = true
+size = Vector2(3400.058, 123.98291)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hrvbo"]
+resource_local_to_scene = true
+size = Vector2(3400.058, 123.98291)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uypp3"]
+resource_local_to_scene = true
+size = Vector2(3400.058, 123.98291)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_blkrb"]
+resource_local_to_scene = true
+size = Vector2(3400.058, 123.98291)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_abqjc"]
+resource_local_to_scene = true
+size = Vector2(3400.058, 123.98291)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6iyjs"]
+resource_local_to_scene = true
+size = Vector2(214, 278)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4w656"]
+resource_local_to_scene = true
+size = Vector2(254, 318)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e71vb"]
+resource_local_to_scene = true
+size = Vector2(318, 825)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rnkwl"]
+resource_local_to_scene = true
+size = Vector2(358, 865)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vke2r"]
+resource_local_to_scene = true
+size = Vector2(869, 178)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uit24"]
+resource_local_to_scene = true
+size = Vector2(909, 218)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ruth0"]
+resource_local_to_scene = true
+size = Vector2(64, 297)
+
+[sub_resource type="Animation" id="Animation_074og"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2469, -289)]
+}
+
+[sub_resource type="Animation" id="Animation_cegan"]
+resource_local_to_scene = true
+resource_name = "on_failure"
+
+[sub_resource type="Animation" id="Animation_82xsv"]
+resource_local_to_scene = true
+resource_name = "on_success"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2469, -289), Vector2(2469, -585)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rm4vd"]
+resource_local_to_scene = true
+_data = {
+&"RESET": SubResource("Animation_074og"),
+&"on_failure": SubResource("Animation_cegan"),
+&"on_success": SubResource("Animation_82xsv")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pjyto"]
+resource_local_to_scene = true
+size = Vector2(122, 2869)
+
+[sub_resource type="Animation" id="Animation_d13ii"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.8794591]
+}
+
+[sub_resource type="Animation" id="Animation_1u8w0"]
+resource_local_to_scene = true
+resource_name = "on_failure"
+length = 0.15
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.8794591, 0.00022929907]
+}
+
+[sub_resource type="Animation" id="Animation_0odxb"]
+resource_local_to_scene = true
+resource_name = "on_success"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.8794591]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sm6fg"]
+resource_local_to_scene = true
+_data = {
+&"RESET": SubResource("Animation_d13ii"),
+&"on_failure": SubResource("Animation_1u8w0"),
+&"on_success": SubResource("Animation_0odxb")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b17eg"]
+resource_local_to_scene = true
+size = Vector2(88, 734)
+
+[sub_resource type="Animation" id="Animation_seu75"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(14317, 3233)]
+}
+
+[sub_resource type="Animation" id="Animation_htxhm"]
+resource_local_to_scene = true
+resource_name = "on_failure"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(14317, 3233), Vector2(14316, 3175)]
+}
+
+[sub_resource type="Animation" id="Animation_jq2sk"]
+resource_local_to_scene = true
+resource_name = "on_success"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(14317, 3233), Vector2(14315, 3170)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ntx8l"]
+resource_local_to_scene = true
+_data = {
+&"RESET": SubResource("Animation_seu75"),
+&"on_failure": SubResource("Animation_htxhm"),
+&"on_success": SubResource("Animation_jq2sk")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uatky"]
+resource_local_to_scene = true
+size = Vector2(108, 1013)
+
+[sub_resource type="Animation" id="Animation_4c57u"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_facbu"]
+resource_local_to_scene = true
+resource_name = "on_failure"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.5475322, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_b1qrp"]
+resource_local_to_scene = true
+resource_name = "on_success"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.43333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.5475322]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rqtf5"]
+resource_local_to_scene = true
+_data = {
+&"RESET": SubResource("Animation_4c57u"),
+&"on_failure": SubResource("Animation_facbu"),
+&"on_success": SubResource("Animation_b1qrp")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vm84"]
+resource_local_to_scene = true
+size = Vector2(108, 228)
+
+[sub_resource type="Animation" id="Animation_come4"]
+resource_local_to_scene = true
+resource_name = "on_failure"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2588, 377)]
+}
+
+[sub_resource type="Animation" id="Animation_h8e4i"]
+resource_local_to_scene = true
+resource_name = "on_success"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2588, 377), Vector2(2588, 592)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wu3dr"]
+resource_local_to_scene = true
+_data = {
+&"RESET": SubResource("Animation_4c57u"),
+&"on_failure": SubResource("Animation_come4"),
+&"on_success": SubResource("Animation_h8e4i")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cyx1q"]
+resource_local_to_scene = true
+size = Vector2(130, 1739)
+
+[sub_resource type="Animation" id="Animation_4lmeg"]
+resource_local_to_scene = true
+resource_name = "on_failure"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2588, 377)]
+}
+
+[sub_resource type="Animation" id="Animation_0cp0l"]
+resource_local_to_scene = true
+resource_name = "on_success"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.48386073]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0dhbp"]
+resource_local_to_scene = true
+_data = {
+&"RESET": SubResource("Animation_4c57u"),
+&"on_failure": SubResource("Animation_4lmeg"),
+&"on_success": SubResource("Animation_0cp0l")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jx0wj"]
+resource_local_to_scene = true
+size = Vector2(369, 958)
+
+[sub_resource type="Animation" id="Animation_ruth0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(937, 6752)]
+}
+
+[sub_resource type="Animation" id="Animation_rm4vd"]
+resource_local_to_scene = true
+resource_name = "on_failure"
+length = 1.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(3967, 6752), Vector2(937, 6752)]
+}
+
+[sub_resource type="Animation" id="Animation_pjyto"]
+resource_local_to_scene = true
+resource_name = "on_success"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(3967, 6752)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kkkcx"]
+resource_local_to_scene = true
+_data = {
+&"RESET": SubResource("Animation_ruth0"),
+&"on_failure": SubResource("Animation_rm4vd"),
+&"on_success": SubResource("Animation_pjyto")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_34ol3"]
+resource_local_to_scene = true
+size = Vector2(112.1521, 1190.4175)
+
+[sub_resource type="Animation" id="Animation_ntx8l"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.6134861]
+}
+
+[sub_resource type="Animation" id="Animation_uatky"]
+resource_local_to_scene = true
+resource_name = "on_failure"
+
+[sub_resource type="Animation" id="Animation_rqtf5"]
+resource_local_to_scene = true
+resource_name = "on_success"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.6134861, -1.5491251]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c2n8d"]
+resource_local_to_scene = true
+_data = {
+&"RESET": SubResource("Animation_ntx8l"),
+&"on_failure": SubResource("Animation_uatky"),
+&"on_success": SubResource("Animation_rqtf5")
+}
 
 [node name="Node2D" type="Node2D" unique_id=1826810981]
 
@@ -56,11 +650,13 @@ script = ExtResource("2_7mycd")
 
 [node name="ball1" parent="." unique_id=1798009355 instance=ExtResource("1_3vijo")]
 unique_name_in_owner = true
-position = Vector2(192, 0)
+position = Vector2(2232, -311.0005)
+rotation = -0.20684847
+mass = 2.0
 
 [node name="ball2" parent="." unique_id=537935712 instance=ExtResource("1_3vijo")]
 unique_name_in_owner = true
-position = Vector2(424, 1657)
+position = Vector2(2074, 124)
 scale = Vector2(1.0000001, 1.0000001)
 
 [node name="World" type="Node2D" parent="." unique_id=1534289784]
@@ -72,94 +668,843 @@ ROTSPEED = 1.0
 rotation = 0.057595864
 scale = Vector2(0.99999994, 0.99999994)
 
-[node name="wall" parent="World/Walls" unique_id=51137901 instance=ExtResource("2_0xm2m")]
-position = Vector2(-211, -10)
-rotation = 0.48515567
+[node name="Tutorial" type="Node2D" parent="World/Walls" unique_id=485247098]
+scale = Vector2(1.0000001, 1.0000001)
 
-[node name="TextureRect" parent="World/Walls/wall" index="0" unique_id=988948665]
-offset_left = -0.46634483
-offset_top = -0.8846054
-offset_right = 1762.4259
-offset_bottom = 63.115395
+[node name="wall" parent="World/Walls/Tutorial" unique_id=51137901 instance=ExtResource("2_0xm2m")]
+position = Vector2(-137.68626, 339.48822)
+rotation = -0.047701873
+scale = Vector2(0.9999998, 0.9999998)
 
-[node name="CollisionShape2D" parent="World/Walls/wall" index="1" unique_id=533170504]
-position = Vector2(880.97974, 31.115395)
-shape = SubResource("RectangleShape2D_5vw27")
+[node name="TextureRect" parent="World/Walls/Tutorial/wall" index="0" unique_id=988948665]
+offset_right = 7119.501
+offset_bottom = 102.00281
 
-[node name="wall3" parent="World/Walls" unique_id=1823012512 instance=ExtResource("2_0xm2m")]
-position = Vector2(2413.6956, 672.1726)
-rotation = -0.50173545
-scale = Vector2(-3.7125044, 1)
-
-[node name="TextureRect" parent="World/Walls/wall3" index="0" unique_id=988948665]
-offset_left = -0.46634483
-offset_top = -0.8846054
-offset_right = 616.4611
-offset_bottom = 63.115395
-
-[node name="CollisionShape2D" parent="World/Walls/wall3" index="1" unique_id=533170504]
-position = Vector2(307.9974, 31.115395)
-shape = SubResource("RectangleShape2D_kek77")
-
-[node name="wall4" parent="World/Walls" unique_id=1971351801 instance=ExtResource("2_0xm2m")]
-position = Vector2(2408.1853, 663.47534)
-rotation = -0.025686612
-scale = Vector2(2.016084, 0.99999994)
-
-[node name="TextureRect" parent="World/Walls/wall4" index="0" unique_id=988948665]
-offset_left = -0.46634483
-offset_top = -0.8846054
-offset_right = 1722.0278
-offset_bottom = 63.115395
-
-[node name="CollisionShape2D" parent="World/Walls/wall4" index="1" unique_id=533170504]
-position = Vector2(860.7807, 31.115395)
+[node name="CollisionShape2D" parent="World/Walls/Tutorial/wall" index="1" unique_id=533170504]
+position = Vector2(3559.7505, 51.001404)
 shape = SubResource("RectangleShape2D_4c57u")
 
-[node name="wall5" parent="World/Walls" unique_id=1974553864 instance=ExtResource("2_0xm2m")]
-position = Vector2(442.05145, 1829.5876)
-rotation = -2.0066383
-scale = Vector2(0.99999994, 0.99999994)
+[node name="wall9" parent="World/Walls/Tutorial" unique_id=1654007698 instance=ExtResource("2_0xm2m")]
+position = Vector2(7631.534, 2568.9578)
+rotation = -0.047701873
+scale = Vector2(0.9999998, 0.9999998)
 
-[node name="TextureRect" parent="World/Walls/wall5" index="0" unique_id=988948665]
-offset_left = -0.46634483
-offset_top = -0.8846054
-offset_right = 616.4611
-offset_bottom = 63.115395
-metadata/_edit_use_anchors_ = true
+[node name="TextureRect" parent="World/Walls/Tutorial/wall9" index="0" unique_id=988948665]
+offset_right = 7119.501
+offset_bottom = 102.00281
 
-[node name="CollisionShape2D" parent="World/Walls/wall5" index="1" unique_id=533170504]
-position = Vector2(307.9974, 31.115395)
+[node name="CollisionShape2D" parent="World/Walls/Tutorial/wall9" index="1" unique_id=533170504]
+position = Vector2(3559.7505, 51.001404)
 shape = SubResource("RectangleShape2D_efxa6")
 
-[node name="Expander" parent="World" unique_id=1890306403 instance=ExtResource("7_272bh")]
-position = Vector2(842, 494)
+[node name="wall2" parent="World/Walls/Tutorial" unique_id=1406927535 instance=ExtResource("2_0xm2m")]
+position = Vector2(-170.0008, -151.46521)
+rotation = -0.047701873
+scale = Vector2(0.9999998, 0.9999998)
+
+[node name="TextureRect" parent="World/Walls/Tutorial/wall2" index="0" unique_id=988948665]
+offset_right = 7119.501
+offset_bottom = 102.00281
+
+[node name="CollisionShape2D" parent="World/Walls/Tutorial/wall2" index="1" unique_id=533170504]
+position = Vector2(3559.7505, 51.001404)
+shape = SubResource("RectangleShape2D_dg77c")
+
+[node name="wall6" parent="World/Walls/Tutorial" unique_id=1992594755 instance=ExtResource("2_0xm2m")]
+position = Vector2(6782.443, -899.9169)
+rotation = -0.047701873
+scale = Vector2(0.9999998, 0.9999998)
+
+[node name="TextureRect" parent="World/Walls/Tutorial/wall6" index="0" unique_id=988948665]
+offset_top = 35.587585
+offset_right = 3053.0479
+offset_bottom = 130.48648
+
+[node name="CollisionShape2D" parent="World/Walls/Tutorial/wall6" index="1" unique_id=533170504]
+position = Vector2(1526.5239, 83.03703)
+shape = SubResource("RectangleShape2D_ycdy4")
+
+[node name="wall7" parent="World/Walls/Tutorial" unique_id=1681453205 instance=ExtResource("2_0xm2m")]
+position = Vector2(9825.407, -1040.315)
+rotation = 0.62814146
+scale = Vector2(0.9999998, 0.9999998)
+
+[node name="TextureRect" parent="World/Walls/Tutorial/wall7" index="0" unique_id=988948665]
+offset_top = 35.587585
+offset_right = 4214.559
+offset_bottom = 130.48648
+
+[node name="CollisionShape2D" parent="World/Walls/Tutorial/wall7" index="1" unique_id=533170504]
+position = Vector2(2107.2795, 83.03703)
+shape = SubResource("RectangleShape2D_w48qg")
+
+[node name="wall8" parent="World/Walls/Tutorial" unique_id=329363935 instance=ExtResource("2_0xm2m")]
+position = Vector2(4341.8345, 115.25772)
+rotation = 0.62814146
+scale = Vector2(0.9999998, 0.9999998)
+
+[node name="TextureRect" parent="World/Walls/Tutorial/wall8" index="0" unique_id=988948665]
+offset_top = 35.587585
+offset_right = 4214.559
+offset_bottom = 130.48648
+
+[node name="CollisionShape2D" parent="World/Walls/Tutorial/wall8" index="1" unique_id=533170504]
+position = Vector2(2107.2795, 83.03703)
+shape = SubResource("RectangleShape2D_vivmo")
+
+[node name="wall4" parent="World/Walls/Tutorial" unique_id=461719277 instance=ExtResource("2_0xm2m")]
+position = Vector2(-186.94104, -532.1213)
+rotation = -0.047701873
+scale = Vector2(0.9999998, 0.9999998)
+
+[node name="TextureRect" parent="World/Walls/Tutorial/wall4" index="0" unique_id=988948665]
+offset_right = 7119.501
+offset_bottom = 102.00281
+
+[node name="CollisionShape2D" parent="World/Walls/Tutorial/wall4" index="1" unique_id=533170504]
+position = Vector2(3559.7505, 51.001404)
+shape = SubResource("RectangleShape2D_2cqfq")
+
+[node name="wall3" parent="World/Walls/Tutorial" unique_id=1713058167 instance=ExtResource("2_0xm2m")]
+position = Vector2(-24.78585, 4.4341254)
+rotation = -0.048875764
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="TextureRect" parent="World/Walls/Tutorial/wall3" index="0" unique_id=988948665]
+offset_left = -133.60393
+offset_top = -552.3958
+offset_right = -41.11251
+offset_bottom = 423.47784
+
+[node name="CollisionShape2D" parent="World/Walls/Tutorial/wall3" index="1" unique_id=533170504]
+position = Vector2(-87.358215, -64.458984)
+shape = SubResource("RectangleShape2D_yaehf")
+
+[node name="wall5" parent="World/Walls/Tutorial" unique_id=1799391941 instance=ExtResource("2_0xm2m")]
+position = Vector2(1032.1223, 232.97313)
+rotation = -0.048875764
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="TextureRect" parent="World/Walls/Tutorial/wall5" index="0" unique_id=988948665]
+offset_left = -133.60393
+offset_top = -552.3958
+offset_right = -6.354965
+offset_bottom = -341.53253
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" parent="World/Walls/Tutorial/wall5" index="1" unique_id=533170504]
+position = Vector2(-69.97945, -446.96417)
+shape = SubResource("RectangleShape2D_074og")
+
+[node name="wall10" parent="World/Walls/Tutorial" unique_id=2052431150 instance=ExtResource("2_0xm2m")]
+position = Vector2(4441.9604, 566.2418)
+rotation = -0.048875764
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="TextureRect" parent="World/Walls/Tutorial/wall10" index="0" unique_id=988948665]
+offset_left = -133.60393
+offset_top = -552.3958
+offset_right = -6.354965
+offset_bottom = -341.53253
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" parent="World/Walls/Tutorial/wall10" index="1" unique_id=533170504]
+position = Vector2(-69.97945, -446.96417)
+shape = SubResource("RectangleShape2D_cegan")
+
+[node name="Simple" type="Node2D" parent="World/Walls" unique_id=1772440283]
+
+[node name="wall" parent="World/Walls/Simple" unique_id=2006479709 instance=ExtResource("2_0xm2m")]
+position = Vector2(12210.294, 2293.9302)
+rotation = -0.06743677
+
+[node name="TextureRect" parent="World/Walls/Simple/wall" index="0" unique_id=988948665]
+offset_left = -82.90527
+offset_top = -393.38306
+
+[node name="CollisionShape2D" parent="World/Walls/Simple/wall" index="1" unique_id=533170504]
+position = Vector2(-9.452637, -164.69153)
+shape = SubResource("RectangleShape2D_82xsv")
+
+[node name="wall11" parent="World/Walls/Simple" unique_id=402624043 instance=ExtResource("2_0xm2m")]
+position = Vector2(11420.502, -250.82574)
+rotation = 0.62814146
+scale = Vector2(1.0000001, 1.0000001)
+
+[node name="TextureRect" parent="World/Walls/Simple/wall11" index="0" unique_id=988948665]
+offset_left = -1752.3848
+offset_top = 35.587585
+offset_right = 4214.559
+offset_bottom = 130.48648
+
+[node name="CollisionShape2D" parent="World/Walls/Simple/wall11" index="1" unique_id=533170504]
+position = Vector2(1231.0872, 83.03703)
+shape = SubResource("RectangleShape2D_getpj")
+
+[node name="wall12" parent="World/Walls/Simple" unique_id=1150386292 instance=ExtResource("2_0xm2m")]
+position = Vector2(11187.79, -812.3607)
+rotation = 0.62814146
+scale = Vector2(1.0000001, 1.0000001)
+
+[node name="TextureRect" parent="World/Walls/Simple/wall12" index="0" unique_id=988948665]
+offset_left = -1912.4326
+offset_top = 35.587585
+offset_right = 6507.962
+offset_bottom = 130.48648
+
+[node name="CollisionShape2D" parent="World/Walls/Simple/wall12" index="1" unique_id=533170504]
+position = Vector2(2297.7646, 83.03703)
+shape = SubResource("RectangleShape2D_ryguw")
+
+[node name="wall2" parent="World/Walls/Simple" unique_id=261115038 instance=ExtResource("2_0xm2m")]
+position = Vector2(9291.643, -1611.5361)
+rotation = -0.06766768
+
+[node name="TextureRect" parent="World/Walls/Simple/wall2" index="0" unique_id=988948665]
+offset_left = 238.35245
+offset_top = -272.58948
+offset_right = 324.60635
+offset_bottom = 659.699
+
+[node name="CollisionShape2D" parent="World/Walls/Simple/wall2" index="1" unique_id=533170504]
+position = Vector2(281.4794, 193.55475)
+shape = SubResource("RectangleShape2D_d13ii")
+
+[node name="Sizer" type="Node2D" parent="World/Walls" unique_id=1542967758]
+
+[node name="wall" parent="World/Walls/Sizer" unique_id=1065564714 instance=ExtResource("2_0xm2m")]
+position = Vector2(16163.446, 3068.6563)
+rotation = -0.058303967
+
+[node name="TextureRect" parent="World/Walls/Sizer/wall" index="0" unique_id=988948665]
+offset_left = -8393.486
+offset_right = 269.3916
+offset_bottom = 101.97241
+
+[node name="CollisionShape2D" parent="World/Walls/Sizer/wall" index="1" unique_id=533170504]
+position = Vector2(-4062.0474, 50.986206)
+shape = SubResource("RectangleShape2D_1u8w0")
+
+[node name="wall2" parent="World/Walls/Sizer" unique_id=4744466 instance=ExtResource("2_0xm2m")]
+position = Vector2(7549.1006, 3571.3657)
+rotation = -0.058303967
+
+[node name="TextureRect" parent="World/Walls/Sizer/wall2" index="0" unique_id=988948665]
+offset_left = -4680.2188
+offset_right = 269.3916
+offset_bottom = 101.97241
+
+[node name="CollisionShape2D" parent="World/Walls/Sizer/wall2" index="1" unique_id=533170504]
+position = Vector2(-2205.4136, 50.986206)
+shape = SubResource("RectangleShape2D_0odxb")
+
+[node name="wall6" parent="World/Walls/Sizer" unique_id=1252152921 instance=ExtResource("2_0xm2m")]
+position = Vector2(7407.913, 2373.5068)
+rotation = -0.058303967
+
+[node name="TextureRect" parent="World/Walls/Sizer/wall6" index="0" unique_id=988948665]
+offset_left = -4680.2188
+offset_top = -2218.3643
+offset_right = -4552.4893
+offset_bottom = 310.4729
+
+[node name="CollisionShape2D" parent="World/Walls/Sizer/wall6" index="1" unique_id=533170504]
+position = Vector2(-4616.354, -953.9457)
+shape = SubResource("RectangleShape2D_lswn8")
+
+[node name="wall3" parent="World/Walls/Sizer" unique_id=1980200902 instance=ExtResource("2_0xm2m")]
+position = Vector2(7442.733, 2577.841)
+rotation = -0.058303967
+
+[node name="TextureRect" parent="World/Walls/Sizer/wall3" index="0" unique_id=988948665]
+offset_left = -2121.9497
+offset_right = 269.3916
+offset_bottom = 101.97241
+
+[node name="CollisionShape2D" parent="World/Walls/Sizer/wall3" index="1" unique_id=533170504]
+position = Vector2(-926.27905, 50.986206)
+shape = SubResource("RectangleShape2D_a6jrf")
+
+[node name="wall4" parent="World/Walls/Sizer" unique_id=1876676323 instance=ExtResource("2_0xm2m")]
+position = Vector2(4923.5137, 2716.087)
+rotation = -0.058303967
+
+[node name="TextureRect" parent="World/Walls/Sizer/wall4" index="0" unique_id=988948665]
+offset_left = -2119.4048
+offset_right = 287.99487
+offset_bottom = 101.97241
+
+[node name="CollisionShape2D" parent="World/Walls/Sizer/wall4" index="1" unique_id=533170504]
+position = Vector2(-915.70496, 50.986206)
+shape = SubResource("RectangleShape2D_xuqvo")
+
+[node name="wall5" parent="World/Walls/Sizer" unique_id=1022418928 instance=ExtResource("2_0xm2m")]
+position = Vector2(4373.5234, 2158.8223)
+rotation = -0.058303967
+
+[node name="TextureRect" parent="World/Walls/Sizer/wall5" index="0" unique_id=988948665]
+offset_left = -820.61865
+offset_right = 269.3916
+offset_bottom = 101.97241
+
+[node name="CollisionShape2D" parent="World/Walls/Sizer/wall5" index="1" unique_id=533170504]
+position = Vector2(-275.61353, 50.986206)
+shape = SubResource("RectangleShape2D_qsp4k")
+
+[node name="Balance" type="Node2D" parent="World/Walls" unique_id=1458279888]
+
+[node name="wall" parent="World/Walls/Balance" unique_id=2089273987 instance=ExtResource("2_0xm2m")]
+position = Vector2(1823.027, 2935.9277)
+rotation = -0.053889006
+
+[node name="TextureRect" parent="World/Walls/Balance/wall" index="0" unique_id=988948665]
+offset_right = 135.5221
+offset_bottom = 2197.7615
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall" index="1" unique_id=533170504]
+position = Vector2(67.76105, 1098.8807)
+shape = SubResource("RectangleShape2D_kq58d")
+
+[node name="wall2" parent="World/Walls/Balance" unique_id=1030815848 instance=ExtResource("2_0xm2m")]
+position = Vector2(2881.7568, 3821.4517)
+rotation = -0.053889006
+
+[node name="TextureRect" parent="World/Walls/Balance/wall2" index="0" unique_id=988948665]
+offset_right = 135.5221
+offset_bottom = 1242.363
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall2" index="1" unique_id=533170504]
+position = Vector2(67.76105, 621.1815)
+shape = SubResource("RectangleShape2D_seu75")
+
+[node name="wall16" parent="World/Walls/Balance" unique_id=986893790 instance=ExtResource("2_0xm2m")]
+position = Vector2(4196.507, 5777.012)
+rotation = -0.053889006
+
+[node name="TextureRect" parent="World/Walls/Balance/wall16" index="0" unique_id=988948665]
+offset_top = -1952.0752
+offset_right = 135.5221
+offset_bottom = 1823.2383
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall16" index="1" unique_id=533170504]
+position = Vector2(67.76105, -64.41846)
+shape = SubResource("RectangleShape2D_htxhm")
+
+[node name="wall19" parent="World/Walls/Balance" unique_id=1998096134 instance=ExtResource("2_0xm2m")]
+position = Vector2(5647.655, 6276.3066)
+rotation = -0.053889006
+
+[node name="TextureRect" parent="World/Walls/Balance/wall19" index="0" unique_id=988948665]
+offset_top = -1952.0752
+offset_right = 135.5221
+offset_bottom = 1823.2383
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall19" index="1" unique_id=533170504]
+position = Vector2(67.76105, -64.41846)
+shape = SubResource("RectangleShape2D_jq2sk")
+
+[node name="wall18" parent="World/Walls/Balance" unique_id=1783161368 instance=ExtResource("2_0xm2m")]
+position = Vector2(3881.106, 8211.204)
+rotation = -1.6302135
+
+[node name="TextureRect" parent="World/Walls/Balance/wall18" index="0" unique_id=988948665]
+offset_right = 135.5221
+offset_bottom = 2000.8848
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall18" index="1" unique_id=533170504]
+position = Vector2(67.76105, 1000.4424)
+shape = SubResource("RectangleShape2D_4k2k6")
+
+[node name="wall17" parent="World/Walls/Balance" unique_id=200002835 instance=ExtResource("2_0xm2m")]
+position = Vector2(3799.7087, 6851.636)
+rotation = -0.053889006
+
+[node name="TextureRect" parent="World/Walls/Balance/wall17" index="0" unique_id=988948665]
+offset_right = 135.5221
+offset_bottom = 1242.363
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall17" index="1" unique_id=533170504]
+position = Vector2(67.76105, 621.1815)
+shape = SubResource("RectangleShape2D_0rl1p")
+
+[node name="wall7" parent="World/Walls/Balance" unique_id=1404423477 instance=ExtResource("2_0xm2m")]
+position = Vector2(518.1338, 2506.3306)
+rotation = -0.053889006
+
+[node name="TextureRect" parent="World/Walls/Balance/wall7" index="0" unique_id=988948665]
+offset_right = 135.5221
+offset_bottom = 4574.6504
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall7" index="1" unique_id=533170504]
+position = Vector2(67.76105, 2287.3252)
+shape = SubResource("RectangleShape2D_ok6jj")
+
+[node name="wall3" parent="World/Walls/Balance" unique_id=2072711858 instance=ExtResource("2_0xm2m")]
+position = Vector2(1427.0569, 6283.272)
+rotation = -1.6362275
+
+[node name="TextureRect" parent="World/Walls/Balance/wall3" index="0" unique_id=988948665]
+offset_left = 121.45025
+offset_top = -112.20629
+offset_right = 256.97235
+offset_bottom = 2352.2087
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall3" index="1" unique_id=533170504]
+position = Vector2(189.2113, 1120.0012)
+shape = SubResource("RectangleShape2D_facbu")
+
+[node name="wall4" parent="World/Walls/Balance" unique_id=284571758 instance=ExtResource("2_0xm2m")]
+position = Vector2(1870.2285, 4970.5845)
+rotation = 0.6241821
+
+[node name="TextureRect" parent="World/Walls/Balance/wall4" index="0" unique_id=988948665]
+offset_left = 121.45025
+offset_top = -57.050163
+offset_right = 256.97235
+offset_bottom = 1304.6544
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall4" index="1" unique_id=533170504]
+position = Vector2(189.2113, 623.8021)
+shape = SubResource("RectangleShape2D_b1qrp")
+
+[node name="wall5" parent="World/Walls/Balance" unique_id=39806281 instance=ExtResource("2_0xm2m")]
+position = Vector2(2058.5535, 158.76514)
+rotation = 0.6241821
+
+[node name="TextureRect" parent="World/Walls/Balance/wall5" index="0" unique_id=988948665]
+offset_left = 121.45025
+offset_top = -57.050163
+offset_right = 256.97235
+offset_bottom = 2771.7961
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall5" index="1" unique_id=533170504]
+position = Vector2(189.2113, 1357.3729)
+shape = SubResource("RectangleShape2D_come4")
+
+[node name="wall6" parent="World/Walls/Balance" unique_id=1751015379 instance=ExtResource("2_0xm2m")]
+position = Vector2(2541.4414, 1358.9578)
+rotation = 0.6241821
+
+[node name="TextureRect" parent="World/Walls/Balance/wall6" index="0" unique_id=988948665]
+offset_left = 338.88593
+offset_top = 152.54361
+offset_right = 474.40802
+offset_bottom = 1782.5818
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall6" index="1" unique_id=533170504]
+position = Vector2(406.64697, 967.56274)
+shape = SubResource("RectangleShape2D_h8e4i")
+
+[node name="wall8" parent="World/Walls/Balance" unique_id=1397530666 instance=ExtResource("2_0xm2m")]
+position = Vector2(843.3879, 7018.089)
+rotation = -0.14962615
+
+[node name="TextureRect" parent="World/Walls/Balance/wall8" index="0" unique_id=988948665]
+offset_top = -39.368652
+offset_right = 463.4701
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall8" index="1" unique_id=533170504]
+position = Vector2(231.73505, 12.315674)
+shape = SubResource("RectangleShape2D_4lmeg")
+
+[node name="wall9" parent="World/Walls/Balance" unique_id=1623558273 instance=ExtResource("2_0xm2m")]
+position = Vector2(1270.1423, 6949.409)
+rotation = 0.035804227
+
+[node name="TextureRect" parent="World/Walls/Balance/wall9" index="0" unique_id=988948665]
+offset_top = -39.368652
+offset_right = 463.4701
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall9" index="1" unique_id=533170504]
+position = Vector2(231.73505, 12.315674)
+shape = SubResource("RectangleShape2D_0cp0l")
+
+[node name="wall10" parent="World/Walls/Balance" unique_id=1382314036 instance=ExtResource("2_0xm2m")]
+position = Vector2(1735.733, 6963.6313)
+rotation = -0.14962615
+
+[node name="TextureRect" parent="World/Walls/Balance/wall10" index="0" unique_id=988948665]
+offset_top = -39.368652
+offset_right = 463.4701
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall10" index="1" unique_id=533170504]
+position = Vector2(231.73505, 12.315674)
+shape = SubResource("RectangleShape2D_d2t1y")
+
+[node name="wall11" parent="World/Walls/Balance" unique_id=428587154 instance=ExtResource("2_0xm2m")]
+position = Vector2(2162.4875, 6894.952)
+rotation = 0.035804227
+
+[node name="TextureRect" parent="World/Walls/Balance/wall11" index="0" unique_id=988948665]
+offset_top = -39.368652
+offset_right = 463.4701
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall11" index="1" unique_id=533170504]
+position = Vector2(231.73505, 12.315674)
+shape = SubResource("RectangleShape2D_gngh3")
+
+[node name="wall12" parent="World/Walls/Balance" unique_id=1106850735 instance=ExtResource("2_0xm2m")]
+position = Vector2(2631.073, 6909.0015)
+rotation = -0.14962615
+
+[node name="TextureRect" parent="World/Walls/Balance/wall12" index="0" unique_id=988948665]
+offset_top = -39.368652
+offset_right = 463.4701
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall12" index="1" unique_id=533170504]
+position = Vector2(231.73505, 12.315674)
+shape = SubResource("RectangleShape2D_0n3wm")
+
+[node name="wall13" parent="World/Walls/Balance" unique_id=2047650613 instance=ExtResource("2_0xm2m")]
+position = Vector2(3057.8274, 6840.3223)
+rotation = 0.035804227
+
+[node name="TextureRect" parent="World/Walls/Balance/wall13" index="0" unique_id=988948665]
+offset_top = -39.368652
+offset_right = 463.4701
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall13" index="1" unique_id=533170504]
+position = Vector2(231.73505, 12.315674)
+shape = SubResource("RectangleShape2D_qnost")
+
+[node name="wall14" parent="World/Walls/Balance" unique_id=240197039 instance=ExtResource("2_0xm2m")]
+position = Vector2(3453.2842, 6871.61)
+rotation = -0.14962615
+
+[node name="TextureRect" parent="World/Walls/Balance/wall14" index="0" unique_id=988948665]
+offset_top = -39.368652
+offset_right = 463.4701
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" parent="World/Walls/Balance/wall14" index="1" unique_id=533170504]
+position = Vector2(231.73505, 12.315674)
+shape = SubResource("RectangleShape2D_wnkbs")
+
+[node name="End" type="Node2D" parent="World/Walls" unique_id=222316793]
+
+[node name="wall" parent="World/Walls/End" unique_id=654990132 instance=ExtResource("2_0xm2m")]
+position = Vector2(5521.6587, 4334.3384)
+rotation = 0.4426083
+
+[node name="TextureRect" parent="World/Walls/End/wall" index="0" unique_id=988948665]
+offset_right = 3400.058
+offset_bottom = 123.98291
+
+[node name="CollisionShape2D" parent="World/Walls/End/wall" index="1" unique_id=533170504]
+position = Vector2(1700.029, 61.991455)
+shape = SubResource("RectangleShape2D_f6a44")
+
+[node name="wall6" parent="World/Walls/End" unique_id=1765282037 instance=ExtResource("2_0xm2m")]
+position = Vector2(5608.8813, 3658.1968)
+rotation = 0.4426083
+
+[node name="TextureRect" parent="World/Walls/End/wall6" index="0" unique_id=988948665]
+offset_right = 3400.058
+offset_bottom = 123.98291
+
+[node name="CollisionShape2D" parent="World/Walls/End/wall6" index="1" unique_id=533170504]
+position = Vector2(1700.029, 61.991455)
+shape = SubResource("RectangleShape2D_0cbny")
+
+[node name="wall2" parent="World/Walls/End" unique_id=611428568 instance=ExtResource("2_0xm2m")]
+position = Vector2(8515.596, 5758.3564)
+rotation = 0.329636
+
+[node name="TextureRect" parent="World/Walls/End/wall2" index="0" unique_id=988948665]
+offset_right = 3400.058
+offset_bottom = 123.98291
+
+[node name="CollisionShape2D" parent="World/Walls/End/wall2" index="1" unique_id=533170504]
+position = Vector2(1700.029, 61.991455)
+shape = SubResource("RectangleShape2D_hrvbo")
+
+[node name="wall3" parent="World/Walls/End" unique_id=404938547 instance=ExtResource("2_0xm2m")]
+position = Vector2(11638.7705, 6835.3604)
+rotation = 0.09314279
+
+[node name="TextureRect" parent="World/Walls/End/wall3" index="0" unique_id=988948665]
+offset_right = 3400.058
+offset_bottom = 123.98291
+
+[node name="CollisionShape2D" parent="World/Walls/End/wall3" index="1" unique_id=533170504]
+position = Vector2(1700.029, 61.991455)
+shape = SubResource("RectangleShape2D_uypp3")
+
+[node name="wall4" parent="World/Walls/End" unique_id=1763509462 instance=ExtResource("2_0xm2m")]
+position = Vector2(14962.963, 7142.5156)
+rotation = -0.06113234
+
+[node name="TextureRect" parent="World/Walls/End/wall4" index="0" unique_id=988948665]
+offset_right = 3400.058
+offset_bottom = 123.98291
+
+[node name="CollisionShape2D" parent="World/Walls/End/wall4" index="1" unique_id=533170504]
+position = Vector2(1700.029, 61.991455)
+shape = SubResource("RectangleShape2D_blkrb")
+
+[node name="wall5" parent="World/Walls/End" unique_id=191300749 instance=ExtResource("2_0xm2m")]
+position = Vector2(18359.172, 6926.659)
+rotation = -0.3764444
+
+[node name="TextureRect" parent="World/Walls/End/wall5" index="0" unique_id=988948665]
+offset_right = 3400.058
+offset_bottom = 123.98291
+
+[node name="CollisionShape2D" parent="World/Walls/End/wall5" index="1" unique_id=533170504]
+position = Vector2(1700.029, 61.991455)
+shape = SubResource("RectangleShape2D_abqjc")
 
 [node name="BreakableWalls" type="Node2D" parent="World" unique_id=70143123]
 
-[node name="breakablewall" parent="World/BreakableWalls" unique_id=394817608 instance=ExtResource("6_5vw27")]
-position = Vector2(3281, 364)
+[node name="breakablewall" parent="World/BreakableWalls" unique_id=1428011724 instance=ExtResource("6_5vw27")]
+position = Vector2(3402, -246)
 massNeeded = 2.0
-crackShader = SubResource("ShaderMaterial_4c57u")
 
 [node name="TextureRect" parent="World/BreakableWalls/breakablewall" index="0" unique_id=988948665]
-offset_right = 605.0
-offset_bottom = 349.0
+offset_left = -32.0
+offset_top = -158.0
+offset_right = 182.0
+offset_bottom = 120.0
 
 [node name="CollisionShape2D" parent="World/BreakableWalls/breakablewall" index="1" unique_id=533170504]
-position = Vector2(302.5, 174.5)
-shape = SubResource("RectangleShape2D_dg77c")
+position = Vector2(75, -19)
+shape = SubResource("RectangleShape2D_6iyjs")
 
-[node name="CollisionShape2D" parent="World/BreakableWalls/breakablewall/Area2D" parent_id_path=PackedInt32Array(394817608, 365854931) index="0" unique_id=719512791]
-position = Vector2(302.5, 174.5)
-shape = SubResource("RectangleShape2D_ycdy4")
+[node name="CollisionShape2D" parent="World/BreakableWalls/breakablewall/Area2D" parent_id_path=PackedInt32Array(1428011724, 365854931) index="0" unique_id=719512791]
+position = Vector2(75, -19)
+shape = SubResource("RectangleShape2D_4w656")
 
 [node name="CPUParticles2D" parent="World/BreakableWalls/breakablewall" index="3" unique_id=515280833]
-position = Vector2(302.5, 174.5)
-emission_rect_extents = Vector2(302.5, 174.5)
+position = Vector2(75, -19)
+emission_rect_extents = Vector2(107, 139)
+
+[node name="breakablewall2" parent="World/BreakableWalls" unique_id=1472228005 instance=ExtResource("6_5vw27")]
+position = Vector2(12827, 3732)
+massNeeded = 2.0
+
+[node name="TextureRect" parent="World/BreakableWalls/breakablewall2" index="0" unique_id=988948665]
+offset_top = -564.0
+offset_right = 318.0
+offset_bottom = 261.0
+
+[node name="CollisionShape2D" parent="World/BreakableWalls/breakablewall2" index="1" unique_id=533170504]
+position = Vector2(159, -151.5)
+shape = SubResource("RectangleShape2D_e71vb")
+
+[node name="CollisionShape2D" parent="World/BreakableWalls/breakablewall2/Area2D" parent_id_path=PackedInt32Array(1472228005, 365854931) index="0" unique_id=719512791]
+position = Vector2(159, -151.5)
+shape = SubResource("RectangleShape2D_rnkwl")
+
+[node name="CPUParticles2D" parent="World/BreakableWalls/breakablewall2" index="3" unique_id=515280833]
+position = Vector2(159, -151.5)
+emission_rect_extents = Vector2(159, 412.5)
+
+[node name="breakablewall3" parent="World/BreakableWalls" unique_id=978511705 instance=ExtResource("6_5vw27")]
+position = Vector2(1784, 3952)
+massNeeded = 2.0
+
+[node name="TextureRect" parent="World/BreakableWalls/breakablewall3" index="0" unique_id=988948665]
+offset_right = 869.0
+offset_bottom = 178.0
+
+[node name="CollisionShape2D" parent="World/BreakableWalls/breakablewall3" index="1" unique_id=533170504]
+position = Vector2(434.5, 89)
+shape = SubResource("RectangleShape2D_vke2r")
+
+[node name="CollisionShape2D" parent="World/BreakableWalls/breakablewall3/Area2D" parent_id_path=PackedInt32Array(978511705, 365854931) index="0" unique_id=719512791]
+position = Vector2(434.5, 89)
+shape = SubResource("RectangleShape2D_uit24")
+
+[node name="CPUParticles2D" parent="World/BreakableWalls/breakablewall3" index="3" unique_id=515280833]
+position = Vector2(434.5, 89)
+emission_rect_extents = Vector2(434.5, 89)
+
+[node name="PressurePlates" type="Node2D" parent="World" unique_id=868479008]
+
+[node name="PressurePlate" parent="World/PressurePlates" unique_id=1774086667 instance=ExtResource("8_4c57u")]
+position = Vector2(2487, 358)
+scale = Vector2(4.1325173, 1.8572129)
+
+[node name="PressurePlate2" parent="World/PressurePlates" unique_id=1534046171 instance=ExtResource("8_4c57u")]
+position = Vector2(9478, 3022)
+scale = Vector2(8.992, 4.166)
+
+[node name="PressurePlate3" parent="World/PressurePlates" unique_id=167870766 instance=ExtResource("8_4c57u")]
+position = Vector2(11685, 3044.0002)
+scale = Vector2(8.992, 4.166)
+
+[node name="PressurePlate4" parent="World/PressurePlates" unique_id=2144867113 instance=ExtResource("8_4c57u")]
+position = Vector2(13530, 3993)
+scale = Vector2(3.282481, 2.2775476)
+
+[node name="PressurePlate5" parent="World/PressurePlates" unique_id=388394117 instance=ExtResource("8_4c57u")]
+position = Vector2(3954, 2409)
+scale = Vector2(9.336988, 2.2775476)
+
+[node name="PressurePlate6" parent="World/PressurePlates" unique_id=721145112 instance=ExtResource("8_4c57u")]
+position = Vector2(2191, 6091)
+scale = Vector2(22.78392, 6.1568165)
+
+[node name="PressurePlate7" parent="World/PressurePlates" unique_id=715157901 instance=ExtResource("8_4c57u")]
+position = Vector2(3723, 8284)
+scale = Vector2(5.8639145, 6.1568165)
+
+[node name="Expanders" type="Node2D" parent="World" unique_id=1851138069]
+
+[node name="Expander" parent="World/Expanders" unique_id=1890306403 instance=ExtResource("7_272bh")]
+position = Vector2(1728, -280)
+scale = Vector2(2.874187, 2.874187)
+
+[node name="Expander2" parent="World/Expanders" unique_id=1853879212 instance=ExtResource("7_272bh")]
+position = Vector2(2213, 4700)
+scale = Vector2(9.463769, 9.463769)
+
+[node name="MovableWalls" type="Node2D" parent="World" unique_id=961527660]
+
+[node name="movablewall" parent="World/MovableWalls" unique_id=1785377197 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_efxa6")]
+position = Vector2(2469, -289)
+pressure_plates = [NodePath("../../PressurePlates/PressurePlate")]
+all_plates_needed = false
+stays_successful = true
+
+[node name="TextureRect" parent="World/MovableWalls/movablewall" index="0" unique_id=988948665]
+offset_top = -127.0
+offset_bottom = 170.0
+
+[node name="CollisionShape2D" parent="World/MovableWalls/movablewall" index="1" unique_id=533170504]
+position = Vector2(32, 21.5)
+shape = SubResource("RectangleShape2D_ruth0")
+
+[node name="AnimationPlayer" parent="World/MovableWalls/movablewall" index="2" unique_id=656392015]
+libraries/ = SubResource("AnimationLibrary_rm4vd")
+
+[node name="movablewall2" parent="World/MovableWalls" unique_id=477152375 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_efxa6")]
+position = Vector2(10478, 176)
+rotation = -0.8794591
+pressure_plates = [NodePath("../../PressurePlates/PressurePlate2"), NodePath("../../PressurePlates/PressurePlate3")]
+all_plates_needed = false
+
+[node name="TextureRect" parent="World/MovableWalls/movablewall2" index="0" unique_id=988948665]
+offset_right = 122.0
+offset_bottom = 2869.0
+
+[node name="CollisionShape2D" parent="World/MovableWalls/movablewall2" index="1" unique_id=533170504]
+position = Vector2(61, 1434.5)
+shape = SubResource("RectangleShape2D_pjyto")
+
+[node name="AnimationPlayer" parent="World/MovableWalls/movablewall2" index="2" unique_id=656392015]
+root_node = NodePath("../../movablewall2")
+libraries/ = SubResource("AnimationLibrary_sm6fg")
+
+[node name="movablewall3" parent="World/MovableWalls" unique_id=1470495775 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_efxa6")]
+position = Vector2(14317, 3233)
+pressure_plates = [NodePath("../../PressurePlates/PressurePlate4")]
+all_plates_needed = false
+stays_successful = true
+
+[node name="TextureRect" parent="World/MovableWalls/movablewall3" index="0" unique_id=988948665]
+offset_left = 20.0
+offset_top = -98.0
+offset_right = 108.0
+offset_bottom = 636.0
+
+[node name="CollisionShape2D" parent="World/MovableWalls/movablewall3" index="1" unique_id=533170504]
+position = Vector2(64, 269)
+shape = SubResource("RectangleShape2D_b17eg")
+
+[node name="AnimationPlayer" parent="World/MovableWalls/movablewall3" index="2" unique_id=656392015]
+libraries/ = SubResource("AnimationLibrary_ntx8l")
+
+[node name="movablewall4" parent="World/MovableWalls" unique_id=347356784 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_efxa6")]
+position = Vector2(2663.9998, 3015)
+pressure_plates = [NodePath("../../PressurePlates/PressurePlate5")]
+all_plates_needed = false
+
+[node name="TextureRect" parent="World/MovableWalls/movablewall4" index="0" unique_id=988948665]
+offset_right = 108.0
+offset_bottom = 1013.0
+
+[node name="CollisionShape2D" parent="World/MovableWalls/movablewall4" index="1" unique_id=533170504]
+position = Vector2(54, 506.5)
+shape = SubResource("RectangleShape2D_uatky")
+
+[node name="AnimationPlayer" parent="World/MovableWalls/movablewall4" index="2" unique_id=656392015]
+libraries/ = SubResource("AnimationLibrary_rqtf5")
+
+[node name="movablewall5" parent="World/MovableWalls" unique_id=2134494549 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_efxa6")]
+position = Vector2(2588, 450)
+pressure_plates = [NodePath("../../PressurePlates/PressurePlate5")]
+all_plates_needed = false
+stays_successful = true
+
+[node name="TextureRect" parent="World/MovableWalls/movablewall5" index="0" unique_id=988948665]
+offset_right = 108.0
+offset_bottom = 228.0
+
+[node name="CollisionShape2D" parent="World/MovableWalls/movablewall5" index="1" unique_id=533170504]
+position = Vector2(54, 114)
+shape = SubResource("RectangleShape2D_1vm84")
+
+[node name="AnimationPlayer" parent="World/MovableWalls/movablewall5" index="2" unique_id=656392015]
+libraries/ = SubResource("AnimationLibrary_wu3dr")
+
+[node name="movablewall6" parent="World/MovableWalls" unique_id=1339267730 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_efxa6")]
+position = Vector2(2551.0002, 892)
+pressure_plates = [NodePath("../../PressurePlates/PressurePlate5")]
+all_plates_needed = false
+stays_successful = true
+
+[node name="TextureRect" parent="World/MovableWalls/movablewall6" index="0" unique_id=988948665]
+offset_left = 17.0
+offset_right = 147.0
+offset_bottom = 1739.0
+
+[node name="CollisionShape2D" parent="World/MovableWalls/movablewall6" index="1" unique_id=533170504]
+position = Vector2(82, 869.5)
+shape = SubResource("RectangleShape2D_cyx1q")
+
+[node name="AnimationPlayer" parent="World/MovableWalls/movablewall6" index="2" unique_id=656392015]
+libraries/ = SubResource("AnimationLibrary_0dhbp")
+
+[node name="movablewall7" parent="World/MovableWalls" unique_id=399641092 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_efxa6")]
+position = Vector2(937, 6752)
+pressure_plates = [NodePath("../../PressurePlates/PressurePlate6")]
+
+[node name="TextureRect" parent="World/MovableWalls/movablewall7" index="0" unique_id=988948665]
+offset_left = -107.0
+offset_top = -541.0
+offset_right = 262.0
+offset_bottom = 417.0
+
+[node name="CollisionShape2D" parent="World/MovableWalls/movablewall7" index="1" unique_id=533170504]
+position = Vector2(77.5, -62)
+shape = SubResource("RectangleShape2D_jx0wj")
+
+[node name="AnimationPlayer" parent="World/MovableWalls/movablewall7" index="2" unique_id=656392015]
+libraries/ = SubResource("AnimationLibrary_kkkcx")
+
+[node name="movablewall8" parent="World/MovableWalls" unique_id=1262713137 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_efxa6")]
+position = Vector2(2658.0005, 5204.0005)
+rotation = -0.6134861
+pressure_plates = [NodePath("../../PressurePlates/PressurePlate7")]
+all_plates_needed = false
+stays_successful = true
+
+[node name="TextureRect" parent="World/MovableWalls/movablewall8" index="0" unique_id=988948665]
+offset_right = 112.1521
+offset_bottom = 1190.4175
+
+[node name="CollisionShape2D" parent="World/MovableWalls/movablewall8" index="1" unique_id=533170504]
+position = Vector2(56.07605, 595.20874)
+shape = SubResource("RectangleShape2D_34ol3")
+
+[node name="AnimationPlayer" parent="World/MovableWalls/movablewall8" index="2" unique_id=656392015]
+libraries/ = SubResource("AnimationLibrary_c2n8d")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=877621778]
-visible = false
 z_index = -1
 offset_left = -81268.0
 offset_top = -57157.008
@@ -175,8 +1520,58 @@ visible = false
 [node name="menu" parent="CanvasLayer" unique_id=884898043 instance=ExtResource("5_lquwl")]
 metadata/_edit_use_anchors_ = true
 
-[editable path="World/Walls/wall"]
-[editable path="World/Walls/wall3"]
-[editable path="World/Walls/wall4"]
-[editable path="World/Walls/wall5"]
+[editable path="World/Walls/Tutorial/wall"]
+[editable path="World/Walls/Tutorial/wall9"]
+[editable path="World/Walls/Tutorial/wall2"]
+[editable path="World/Walls/Tutorial/wall6"]
+[editable path="World/Walls/Tutorial/wall7"]
+[editable path="World/Walls/Tutorial/wall8"]
+[editable path="World/Walls/Tutorial/wall4"]
+[editable path="World/Walls/Tutorial/wall3"]
+[editable path="World/Walls/Tutorial/wall5"]
+[editable path="World/Walls/Tutorial/wall10"]
+[editable path="World/Walls/Simple/wall"]
+[editable path="World/Walls/Simple/wall11"]
+[editable path="World/Walls/Simple/wall12"]
+[editable path="World/Walls/Simple/wall2"]
+[editable path="World/Walls/Sizer/wall"]
+[editable path="World/Walls/Sizer/wall2"]
+[editable path="World/Walls/Sizer/wall6"]
+[editable path="World/Walls/Sizer/wall3"]
+[editable path="World/Walls/Sizer/wall4"]
+[editable path="World/Walls/Sizer/wall5"]
+[editable path="World/Walls/Balance/wall"]
+[editable path="World/Walls/Balance/wall2"]
+[editable path="World/Walls/Balance/wall16"]
+[editable path="World/Walls/Balance/wall19"]
+[editable path="World/Walls/Balance/wall18"]
+[editable path="World/Walls/Balance/wall17"]
+[editable path="World/Walls/Balance/wall7"]
+[editable path="World/Walls/Balance/wall3"]
+[editable path="World/Walls/Balance/wall4"]
+[editable path="World/Walls/Balance/wall5"]
+[editable path="World/Walls/Balance/wall6"]
+[editable path="World/Walls/Balance/wall8"]
+[editable path="World/Walls/Balance/wall9"]
+[editable path="World/Walls/Balance/wall10"]
+[editable path="World/Walls/Balance/wall11"]
+[editable path="World/Walls/Balance/wall12"]
+[editable path="World/Walls/Balance/wall13"]
+[editable path="World/Walls/Balance/wall14"]
+[editable path="World/Walls/End/wall"]
+[editable path="World/Walls/End/wall6"]
+[editable path="World/Walls/End/wall2"]
+[editable path="World/Walls/End/wall3"]
+[editable path="World/Walls/End/wall4"]
+[editable path="World/Walls/End/wall5"]
 [editable path="World/BreakableWalls/breakablewall"]
+[editable path="World/BreakableWalls/breakablewall2"]
+[editable path="World/BreakableWalls/breakablewall3"]
+[editable path="World/MovableWalls/movablewall"]
+[editable path="World/MovableWalls/movablewall2"]
+[editable path="World/MovableWalls/movablewall3"]
+[editable path="World/MovableWalls/movablewall4"]
+[editable path="World/MovableWalls/movablewall5"]
+[editable path="World/MovableWalls/movablewall6"]
+[editable path="World/MovableWalls/movablewall7"]
+[editable path="World/MovableWalls/movablewall8"]

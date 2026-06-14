@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bp77npf8pqrx5" path="res://Assets/ball.png" id="1_d60mj"]
 [ext_resource type="Script" uid="uid://b7shrrx7if1dm" path="res://Scripts/ball.gd" id="1_ij5cq"]
+[ext_resource type="AudioStream" uid="uid://dwe8trbqlh5k1" path="res://Assets/Audio/hit.wav" id="3_376qj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ij5cq"]
 resource_local_to_scene = true
@@ -18,3 +19,6 @@ texture = ExtResource("1_d60mj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1766724586]
 shape = SubResource("CircleShape2D_ij5cq")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=998544508]
+stream = ExtResource("3_376qj")

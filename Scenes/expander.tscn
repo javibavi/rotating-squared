@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://iqayfnt3jd5a" path="res://Scripts/expander.gd" id="1_rpyej"]
 [ext_resource type="Texture2D" uid="uid://bbgaieovs1vu7" path="res://Assets/bigball.png" id="1_udkl6"]
+[ext_resource type="AudioStream" uid="uid://cvtfr6v2pbpvc" path="res://Assets/Audio/ding.wav" id="3_x6b2a"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rpyej"]
 resource_local_to_scene = true
@@ -59,3 +60,7 @@ autoplay = &"float"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1799597064]
 texture = ExtResource("1_udkl6")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1493841441]
+stream = ExtResource("3_x6b2a")
+volume_db = 2.3

@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://db6x3w40hjw0e" path="res://Scripts/breakablewall.gd" id="2_vqvbd"]
 [ext_resource type="Shader" uid="uid://bkinwnbt73hid" path="res://Shaders/cracks.gdshader" id="3_rd47w"]
 [ext_resource type="Texture2D" uid="uid://dq6keyna3f658" path="res://Assets/glass.png" id="4_mhj1a"]
+[ext_resource type="AudioStream" uid="uid://mdwtkuougqpk" path="res://Assets/Audio/glass.wav" id="5_k3mhf"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_mhj1a"]
 shader = ExtResource("3_rd47w")
@@ -18,7 +19,7 @@ shader_parameter/refraction_offset = Vector2(25, 25)
 shader_parameter/reflection_offset = Vector2(1, 1)
 shader_parameter/reflection_color = Color(0.588, 0.588, 0.588, 0.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_k3mhf"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t8iol"]
 resource_local_to_scene = true
 size = Vector2(64, 64)
 
@@ -36,7 +37,7 @@ massNeeded = 10.0
 crackShader = SubResource("ShaderMaterial_mhj1a")
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=533170504]
-shape = SubResource("RectangleShape2D_k3mhf")
+shape = SubResource("RectangleShape2D_t8iol")
 
 [node name="Area2D" type="Area2D" parent="." index="2" unique_id=365854931]
 
@@ -65,3 +66,6 @@ scale_amount_curve = SubResource("Curve_k3mhf")
 wait_time = 0.3
 
 [node name="Timer2" type="Timer" parent="." index="5" unique_id=153804557]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="6" unique_id=94039201]
+stream = ExtResource("5_k3mhf")

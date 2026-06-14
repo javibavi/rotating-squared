@@ -7,4 +7,10 @@ func _ready():
 
 func _on_body_entered(body):
 	body.mass += increase_mass_by
-	queue_free()
+	_play_sound(body)
+	# queue_free()
+
+func _play_sound(_body: Node) -> void:
+	var audio_player: AudioStreamPlayer = $AudioStreamPlayer
+	if not audio_player.playing:
+		audio_player.play()

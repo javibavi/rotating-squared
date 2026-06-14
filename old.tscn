@@ -1,0 +1,274 @@
+[gd_scene format=3 uid="uid://yw3v8b488b32"]
+
+[ext_resource type="Script" uid="uid://cvm8v88feww0x" path="res://Scripts/camera.gd" id="1_sxiop"]
+[ext_resource type="PackedScene" uid="uid://btskb0s7a81wy" path="res://Scenes/ball.tscn" id="2_nrb4r"]
+[ext_resource type="Script" uid="uid://c8xc80ab23jyd" path="res://Scripts/walls.gd" id="3_p8wfi"]
+[ext_resource type="PackedScene" uid="uid://c0a1i02sao2v4" path="res://Scenes/wall.tscn" id="4_m3k24"]
+[ext_resource type="PackedScene" uid="uid://d3haelodbgd2o" path="res://Scenes/breakablewall.tscn" id="5_gnq1b"]
+[ext_resource type="Shader" uid="uid://bkinwnbt73hid" path="res://Shaders/cracks.gdshader" id="6_nkw4k"]
+[ext_resource type="PackedScene" uid="uid://xbsqyeu1tdcs" path="res://Scenes/pressure_plate.tscn" id="7_ixqu2"]
+[ext_resource type="PackedScene" uid="uid://d28ne4354uatg" path="res://Scenes/expander.tscn" id="8_lq88f"]
+[ext_resource type="PackedScene" uid="uid://cu2l7krilu1b2" path="res://Scenes/movablewall.tscn" id="9_xiv7t"]
+[ext_resource type="Texture2D" uid="uid://bmtwn5fo3gcsf" path="res://Assets/back.png" id="10_4v5ef"]
+[ext_resource type="PackedScene" uid="uid://cmsxt4w27tsks" path="res://menu.tscn" id="11_n2t78"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_efxa6"]
+resource_local_to_scene = true
+size = Vector2(1762.8922, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dg77c"]
+resource_local_to_scene = true
+size = Vector2(616.9275, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
+resource_local_to_scene = true
+size = Vector2(1722.4941, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w48qg"]
+resource_local_to_scene = true
+size = Vector2(616.9275, 64)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4c57u"]
+shader = ExtResource("6_nkw4k")
+shader_parameter/crack_depth = 2.236
+shader_parameter/crack_scale = 2.1910000565725003
+shader_parameter/crack_zebra_scale = 1.8970000901075
+shader_parameter/crack_zebra_amp = 0.83600003971
+shader_parameter/crack_profile = 1.258000059755
+shader_parameter/crack_slope = 45.8
+shader_parameter/crack_width = 0.0410000019475
+shader_parameter/refraction_offset = Vector2(25, 25)
+shader_parameter/reflection_offset = Vector2(1, 1)
+shader_parameter/reflection_color = Color(0.588, 0.588, 0.588, 0.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vivmo"]
+resource_local_to_scene = true
+size = Vector2(242, 984)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2cqfq"]
+resource_local_to_scene = true
+size = Vector2(282, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yaehf"]
+resource_local_to_scene = true
+size = Vector2(73, 808)
+
+[sub_resource type="Animation" id="Animation_074og"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_cegan"]
+resource_local_to_scene = true
+resource_name = "on_failure"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-1.5707964, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_82xsv"]
+resource_local_to_scene = true
+resource_name = "on_success"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -1.5707964]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_074og"]
+resource_local_to_scene = true
+_data = {
+&"RESET": SubResource("Animation_074og"),
+&"on_failure": SubResource("Animation_cegan"),
+&"on_success": SubResource("Animation_82xsv")
+}
+
+[node name="Node2D" type="Node2D" unique_id=1826810981]
+
+[node name="MainCamera" type="Camera2D" parent="." unique_id=178174515]
+unique_name_in_owner = true
+zoom = Vector2(0.33, 0.33)
+script = ExtResource("1_sxiop")
+
+[node name="ball1" parent="." unique_id=1798009355 instance=ExtResource("2_nrb4r")]
+unique_name_in_owner = true
+position = Vector2(192, 0)
+
+[node name="ball2" parent="." unique_id=537935712 instance=ExtResource("2_nrb4r")]
+unique_name_in_owner = true
+position = Vector2(424, 1657)
+scale = Vector2(1.0000001, 1.0000001)
+
+[node name="World" type="Node2D" parent="." unique_id=1534289784]
+unique_name_in_owner = true
+script = ExtResource("3_p8wfi")
+ROTSPEED = 1.0
+
+[node name="Walls" type="Node2D" parent="World" unique_id=752025862]
+rotation = 0.057595864
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="wall" parent="World/Walls" unique_id=51137901 instance=ExtResource("4_m3k24")]
+position = Vector2(-211, -10)
+rotation = 0.48515567
+
+[node name="TextureRect" parent="World/Walls/wall" index="0" unique_id=988948665]
+offset_left = -0.46634483
+offset_top = -0.8846054
+offset_right = 1762.4259
+offset_bottom = 63.115395
+
+[node name="CollisionShape2D" parent="World/Walls/wall" index="1" unique_id=533170504]
+position = Vector2(880.97974, 31.115395)
+shape = SubResource("RectangleShape2D_efxa6")
+
+[node name="wall3" parent="World/Walls" unique_id=1823012512 instance=ExtResource("4_m3k24")]
+position = Vector2(2413.6956, 672.1726)
+rotation = -0.50173545
+scale = Vector2(-3.7125044, 1)
+
+[node name="TextureRect" parent="World/Walls/wall3" index="0" unique_id=988948665]
+offset_left = -0.46634483
+offset_top = -0.8846054
+offset_right = 616.4611
+offset_bottom = 63.115395
+
+[node name="CollisionShape2D" parent="World/Walls/wall3" index="1" unique_id=533170504]
+position = Vector2(307.9974, 31.115395)
+shape = SubResource("RectangleShape2D_dg77c")
+
+[node name="wall4" parent="World/Walls" unique_id=1971351801 instance=ExtResource("4_m3k24")]
+position = Vector2(2408.1853, 663.47534)
+rotation = -0.025686612
+scale = Vector2(2.016084, 0.99999994)
+
+[node name="TextureRect" parent="World/Walls/wall4" index="0" unique_id=988948665]
+offset_left = -0.46634483
+offset_top = -0.8846054
+offset_right = 1722.0278
+offset_bottom = 63.115395
+
+[node name="CollisionShape2D" parent="World/Walls/wall4" index="1" unique_id=533170504]
+position = Vector2(860.7807, 31.115395)
+shape = SubResource("RectangleShape2D_ycdy4")
+
+[node name="wall5" parent="World/Walls" unique_id=1974553864 instance=ExtResource("4_m3k24")]
+position = Vector2(442.05145, 1829.5876)
+rotation = -2.0066383
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="TextureRect" parent="World/Walls/wall5" index="0" unique_id=988948665]
+offset_left = -0.46634483
+offset_top = -0.8846054
+offset_right = 616.4611
+offset_bottom = 63.115395
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" parent="World/Walls/wall5" index="1" unique_id=533170504]
+position = Vector2(307.9974, 31.115395)
+shape = SubResource("RectangleShape2D_w48qg")
+
+[node name="BreakableWalls" type="Node2D" parent="World" unique_id=70143123]
+
+[node name="breakablewall" parent="World/BreakableWalls" unique_id=394817608 instance=ExtResource("5_gnq1b")]
+position = Vector2(4841, 414)
+massNeeded = 2.0
+crackShader = SubResource("ShaderMaterial_4c57u")
+
+[node name="TextureRect" parent="World/BreakableWalls/breakablewall" index="0" unique_id=988948665]
+offset_top = -522.0
+offset_right = 242.0
+offset_bottom = 462.0
+
+[node name="CollisionShape2D" parent="World/BreakableWalls/breakablewall" index="1" unique_id=533170504]
+position = Vector2(121, -30)
+shape = SubResource("RectangleShape2D_vivmo")
+
+[node name="CollisionShape2D" parent="World/BreakableWalls/breakablewall/Area2D" parent_id_path=PackedInt32Array(394817608, 365854931) index="0" unique_id=719512791]
+position = Vector2(121, -30)
+shape = SubResource("RectangleShape2D_2cqfq")
+
+[node name="CPUParticles2D" parent="World/BreakableWalls/breakablewall" index="3" unique_id=515280833]
+position = Vector2(121, -30)
+emission_rect_extents = Vector2(121, 492)
+
+[node name="PressurePlates" type="Node2D" parent="World" unique_id=868479008]
+
+[node name="PressurePlate" parent="World/PressurePlates" unique_id=2144867113 instance=ExtResource("7_ixqu2")]
+position = Vector2(2875, 822.99994)
+rotation = 0.02003583
+scale = Vector2(4, 4)
+
+[node name="Expanders" type="Node2D" parent="World" unique_id=1851138069]
+
+[node name="Expander" parent="World/Expanders" unique_id=1890306403 instance=ExtResource("8_lq88f")]
+position = Vector2(842, 494)
+
+[node name="MovableWalls" type="Node2D" parent="World" unique_id=961527660]
+
+[node name="movablewall" parent="World/MovableWalls" unique_id=438872431 node_paths=PackedStringArray("pressure_plates") instance=ExtResource("9_xiv7t")]
+position = Vector2(3383, 93)
+pressure_plates = [NodePath("../../PressurePlates/PressurePlate")]
+stays_successful = true
+
+[node name="TextureRect" parent="World/MovableWalls/movablewall" index="0" unique_id=988948665]
+offset_right = 73.0
+offset_bottom = 808.0
+
+[node name="CollisionShape2D" parent="World/MovableWalls/movablewall" index="1" unique_id=533170504]
+position = Vector2(36.5, 404)
+shape = SubResource("RectangleShape2D_yaehf")
+
+[node name="AnimationPlayer" parent="World/MovableWalls/movablewall" index="2" unique_id=656392015]
+libraries/ = SubResource("AnimationLibrary_074og")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=877621778]
+visible = false
+z_index = -1
+offset_left = -81268.0
+offset_top = -57157.008
+offset_right = -75844.0
+offset_bottom = -53330.008
+scale = Vector2(30.687784, 30.708979)
+texture = ExtResource("10_4v5ef")
+stretch_mode = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=180182548]
+visible = false
+
+[node name="menu" parent="CanvasLayer" unique_id=884898043 instance=ExtResource("11_n2t78")]
+metadata/_edit_use_anchors_ = true
+
+[editable path="World/Walls/wall"]
+[editable path="World/Walls/wall3"]
+[editable path="World/Walls/wall4"]
+[editable path="World/Walls/wall5"]
+[editable path="World/BreakableWalls/breakablewall"]
+[editable path="World/MovableWalls/movablewall"]
