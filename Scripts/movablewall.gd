@@ -66,4 +66,3 @@ func _play_sound(_body: Node) -> void:
 	var audio_player: AudioStreamPlayer = $AudioStreamPlayer
 	if not audio_player.playing:
 		audio_player.play()
-
